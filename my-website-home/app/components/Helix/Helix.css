@@ -1,0 +1,15 @@
+.helix-container{
+    position: relative;
+    width: 30dvh;
+    height: 30dvh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.helix-link{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 5;
+}
