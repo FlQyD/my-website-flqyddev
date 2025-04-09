@@ -1,6 +1,8 @@
 .helix-circle {
     width: inherit;
     height: inherit;
+    max-width: inherit;
+    max-height: inherit;
     position: absolute;
 }
 

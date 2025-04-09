@@ -1,0 +1,14 @@
+#top-flex{
+    width: 96dvw;
+    height: 50dvh;
+
+    padding-left: 2dvw;
+    padding-right: 2dvw;
+    padding-top: 20dvh;
+
+    background: linear-gradient(0deg, #00000000 0%, #ffffff14 100%);
+}
+footer{
+    width: 10px;
+    height: 1000px;
+}

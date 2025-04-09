@@ -1,15 +1,41 @@
-.helix-container{
-    position: relative;
-    width: 30dvh;
-    height: 30dvh;
-    margin-left: auto;
-    margin-right: auto;
+.helix-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70dvh;
+    height: 70dvh;
+    overflow: hidden;
+    z-index: -1;
 }
-.helix-link{
+
+.helix-container {
     position: absolute;
-    font-size: 1.5rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    z-index: 5;
+    margin-top: 5px;
+    overflow: hidden;
+    background: transparent;
+
+
+    margin-left: 10px;
+
+    top: 0;
+    right: 0;
+
+    transform: translate(60%, -40%);
+
+    height: 70dvh;
+    width: 70dvh;
 }
+/*
+@media (orientation: portrait) {
+    .helix-container {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+@media (orientation: landscape) {
+
+    .helix-link {
+        font-size: calc(1rem + (20dvw/250));
+    }
+}*/
