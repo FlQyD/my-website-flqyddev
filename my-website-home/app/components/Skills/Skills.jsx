@@ -24,16 +24,6 @@ const Skills = () => {
                     content: "I have used Next.js mainly for projects where SEO was a huge factor. Its routing is also a bit easier for me to handle, and I like working with it. After all, this site was built with Next.js too."
                 },
                 {
-                    title: "PixiJS / ReactPixi",
-                    img: "pixi",
-                    content: "I have used Pixi in the past to visualize data and vectors in 2D, but once, my friend and I also made a browser-based Pokémon game with it."
-                },
-                {
-                    title: "Three.js / React Three Fiber",
-                    img: "three",
-                    content: "I have used Three mainly when I realized how inefficient Pixi is in rendering 3D spaces, so I had to switch for some of my illustrations."
-                },
-                {
                     title: "Tailwind",
                     img: "tailwind",
                     content: "I have to confess that I prefer raw CSS when it's in a small project, because sometimes I can play around with small variables and fine tuning for hours. But when a project reaches a certain size raw CSS can become a bottleneck, so that's why I like to use Tailwind for any project that has a fair size."
@@ -42,6 +32,16 @@ const Skills = () => {
                     title: "Bootstrap",
                     img: "bootstrap",
                     content: "I love Bootstrap for projects that has to be finished quickly, or where ascetic is not the highest priority. I usually use it for admin panels or internal tools, that a small number of people will ever see."
+                },
+                {
+                    title: "PixiJS / ReactPixi",
+                    img: "pixi",
+                    content: "I have used Pixi in the past to visualize data and vectors in 2D, but once, my friend and I also made a browser-based Pokemon game with it."
+                },
+                {
+                    title: "Three.js / React Three Fiber",
+                    img: "three",
+                    content: "I have used Three mainly when I realized how inefficient Pixi is in rendering 3D spaces, so I had to switch for some of my illustrations."
                 }
             ]
         },
@@ -67,6 +67,11 @@ const Skills = () => {
                     title: "Node.js",
                     img: "nodejs",
                     content: "I have used Node.js, in the past numerous times, mainly in order to create certain API servers, some of which runs today, and get's used daily."
+                },
+                {
+                    title: "Express",
+                    img: "express",
+                    content: "Express servers were used by me to mainly make API servers in the past. As well as this server that's returning this website is running on and Express server."
                 },
                 {
                     title: "JWT",
@@ -141,7 +146,7 @@ const Skills = () => {
                 {
                     title: "C++",
                     img: "cplusplus",
-                    content: "I learned C++ quite some time ago, but shifted away from it over the years. I am a bit rusty in it, but I can polish my knowledge on it any time."
+                    content: "I learned C++ quite some time ago, but shifted away from it over the years. I have to refresh my knowledge before I can produce anything meaningful."
                 }
             ]
         }

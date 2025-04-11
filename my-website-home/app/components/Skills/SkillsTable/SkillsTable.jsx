@@ -12,7 +12,7 @@ const SkillsTable = ({title, content}) => {
                 {
                     content && content.map((line, index) => 
                         <div
-                            key={`skill-table-item-${index}-${index == active ? "1" : "0"}`} 
+                            key={`skill-table-item-${index}}`} 
                             className={`skill ${active == index ? "active-skill" : ""}`} 
                             onClick={() => {setActive(active === index ? -1 : index)}}
                         >

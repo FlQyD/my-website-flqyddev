@@ -1,4 +1,4 @@
-import Demo1 from "./components/Demos/Demo1/Demo1.jsx";
+import Background from "./components/Background/Background.jsx";
 import Helix from "./components/Helix/Helix.js";
 import Introduction from "./components/Introduction/Introduction.jsx";
 import Skills from "./components/Skills/Skills.jsx";
@@ -16,14 +16,15 @@ export default function Home() {
                 <section id="skills">
                     <Skills />
                 </section>
-                <div>
-                    <Demo1 />
-                </div>
-           </main>
+                <section>
+                    
+                </section>
+            </main>
             <footer>
-
+                <p>©2025 flqyd.dev All Rights reserved</p>
             </footer>
-        <Helix/>
+        <Helix />
+        <Background />
         </>
     );
 }

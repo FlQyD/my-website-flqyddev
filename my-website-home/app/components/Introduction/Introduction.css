@@ -1,7 +1,7 @@
-#introduction-container{
+#introduction-container {
     justify-content: center;
-    
-    max-width:600px;
+
+    max-width: 600px;
 
     margin: clamp(0.5rem, 50%, auto) auto;
     padding: 0.5rem;
@@ -10,7 +10,7 @@
 
     margin-left: auto;
     margin-right: auto;
-    
+
     border: 1px solid #ffffff3c;
     border-radius: 15px;
     display: flex;
@@ -22,10 +22,36 @@
     color: whitesmoke;
     background: #00000039;
 }
-#introduction-container > p{
+
+#introduction-container>p {
     line-height: 1.1;
     font-size: 1.15rem;
 }
-#introduction-container > h1{
+
+#introduction-container>h1 {
     margin-bottom: 5px;
+}
+
+
+#welcome a {
+    all: unset;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+#welcome a:hover {
+    text-decoration: underline;
+}
+
+#welcome h1 {
+    font-size: 50px;
+}
+
+#welcome h1::after {
+    font-size: 30px;
+}
+
+.glitch {
+    animation: 2s infinite linear alternate-reverse;
 }
