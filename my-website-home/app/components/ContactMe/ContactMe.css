@@ -1,3 +1,5 @@
+@import './../../variables.css';
+
 #contact-me-wrapper {
     width: 100%;
     padding-top: 25px;
@@ -18,10 +20,10 @@
 }
 #contact-me-container > h1{
     font-size: 2rem;
-    color: whitesmoke;
+    color: var(--text-color);
 
     line-height: 1;
-    padding-top: 50px;
+    padding-top: 35px;
 }
 #contact-me-form {
     display: flex;
@@ -43,7 +45,7 @@
     padding: 5px;
     border-radius: 7px;
 
-    border: 1px solid #565656;
+    border: 1px solid var(--border-color);
     outline: 0;
 }
 #contact-me-form>textarea{
@@ -54,8 +56,8 @@
     height: 40px;
 
     font-size: 16px;
-    background: #565656;
-    border: #565656;
+    background: var(--border-color);
+    border: var(--border-color);
     border-radius: 7px;
 }
 #contact-me-form>button:active {
