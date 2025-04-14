@@ -17,16 +17,21 @@
     background: linear-gradient(0deg, #2d2d2d00 0%, #121212cc 100%);
     backdrop-filter: blur(7px);
 }
+#skills-wrapper{
+    max-width: 800px;
 
+    margin-left: auto;
+    margin-right: auto;
+}
+#skills-wrapper > h2 {
+    font-size: 2.5rem;
+    padding: 1rem;
+}
 #skills-content {
     padding-bottom: 15px;
     background: #121212cc;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(7px);
-}
-#skills-content>h2 {
-    font-size: 2.5rem;
-    padding: 1rem;
 }
 #skills-content h2,
 #skills-content p{

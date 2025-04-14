@@ -157,16 +157,18 @@ const Skills = () => {
             <div id='fade-in-effect'>
             </div>
             <div id='skills-content'>
-                <h2>Skills</h2>
-                {
-                    skills.map((line, index) =>
-                        <SkillsTable
-                            key={`skill-item-${index}}`}
-                            title={line.title}
-                            content={line.content}
-                        />
-                    )
-                }
+                <div id='skills-wrapper'>
+                    <h2>Skills</h2>
+                    {
+                        skills.map((line, index) =>
+                            <SkillsTable
+                                key={`skill-item-${index}}`}
+                                title={line.title}
+                                content={line.content}
+                            />
+                        )
+                    }
+                </div>
             </div>
             <div id='fade-out-effect'></div>
         </div>
