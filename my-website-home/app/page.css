@@ -1,4 +1,4 @@
-#top-flex {
+#introduction {
     width: 96dvw;
     height: 50dvh;
 
@@ -6,7 +6,12 @@
     padding-right: 2dvw;
     padding-top: 20dvh;
 
-    background: linear-gradient(0deg, #00000000 0%, #ffffff14 100%);
+    background: linear-gradient(0deg, #00000000 0%, #1d1d1d14 100%);
+}
+#contact-me{
+    width: 100%;
+    height: fit-content;
+    background: #18181840;
 }
 
 footer {
@@ -18,6 +23,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    resize: none;
 }
 
 footer>p {

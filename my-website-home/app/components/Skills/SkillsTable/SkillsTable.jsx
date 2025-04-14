@@ -1,12 +1,20 @@
 "use client";
 
-import React, {useState } from 'react';
+import React, {useEffect, useState } from 'react';
+import AOS from 'aos';
+
+import 'aos/dist/aos.css';
 import './SkillsTable.css'
 
 const SkillsTable = ({title, content}) => {
     const [active, setActive] = useState(-1)
+
+    useEffect(() => {
+        AOS.init({ duration: 1000, once: true });
+    }, []);
+
     return (
-        <div className='inner-skills-container'>
+        <div data-aos="fade-up" className='inner-skills-container'>
             <div><p>{title}</p></div>
             <div>
                 {
