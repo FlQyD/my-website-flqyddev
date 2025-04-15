@@ -1,9 +1,13 @@
 .helix-wrapper {
     position: fixed;
-    top: 0;
+
+    top: -100px;
     right: 0;
+
     width: 70dvh;
+    max-width: 500px;
     height: 70dvh;
+    max-height: 500px;
     overflow: hidden;
     z-index: -1;
 }
@@ -14,28 +18,41 @@
     overflow: hidden;
     background: transparent;
 
-
-    margin-left: 10px;
-
     top: 0;
-    right: 0;
+    left: 0;
 
-    transform: translate(60%, -40%);
-
-    height: 70dvh;
     width: 70dvh;
+    max-width: 500px;
+    height: 70dvh;
+    max-height: 500px;
 }
-/*
-@media (orientation: portrait) {
-    .helix-container {
-        width: 90%;
-        height: 90%;
+
+@media (max-width: 1800px) {
+    .helix-wrapper {
+        right: 0;
     }
 }
 
-@media (orientation: landscape) {
-
-    .helix-link {
-        font-size: calc(1rem + (20dvw/250));
+@media (max-width: 1400px) {
+    .helix-wrapper {
+        right: 75px;
     }
-}*/
+}
+
+@media (max-width: 1000px) {
+    .helix-wrapper {
+        right: -150px;
+    }
+}
+
+@media (max-width: 800px) {
+    .helix-wrapper {
+        right: -225px;
+    }
+}
+
+@media (max-width: 599px) {
+    .helix-wrapper {
+        right: -300px;
+    }
+}
