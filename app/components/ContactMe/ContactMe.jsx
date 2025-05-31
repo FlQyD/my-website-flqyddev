@@ -22,7 +22,7 @@ const ContactMe = () => {
 
         if (!name || !email || !message) return setStatus("All fields are required.");
         try {
-            const response = await fetch('https://fqyd.dev/api/message', {
+            const response = await fetch('https://flqyd.dev/api/message', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

@@ -1,6 +1,5 @@
 import Background from "./components/Background/Background.jsx";
 import ContactMe from "./components/ContactMe/ContactMe.jsx";
-import Helix from "./components/Helix/Helix.js";
 import Introduction from "./components/Introduction/Introduction.jsx";
 import Skills from "./components/Skills/Skills.jsx";
 import "./page.css"

@@ -1,6 +1,5 @@
 import React from 'react'
-import HelixCircle from '../HelixCircle/HelixCircle'
-import githubLogo from '../../../public/imgs/github-logo.png'
+import HelixCircle from '../HelixCircle/HelixCircle.jsx'
 import './Helix.css'
 
 
