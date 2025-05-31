@@ -1,14 +1,12 @@
 .helix-wrapper {
     position: fixed;
-
+    
     top: -100px;
-    right: calc(10dvw);
+    right: calc(40% - 250px);
 
-    width: 70dvh;
-    width: 70vh;
+    width: 500px;
     max-width: 500px;
-    height: 70dvh;
-    height: 70vh;
+    height: 500px;
     max-height: 500px;
     overflow: hidden;
     z-index: -1;
@@ -22,14 +20,22 @@
     top: 0;
     left: 0;
 
-    width: 70dvh;
-    width: 70vh;
+    width: 500px;
     max-width: 500px;
-    height: 70dvh;
-    height: 70vh;
+    height: 500px;
     max-height: 500px;
 }
 
+@media (max-width: 2500px) {
+    .helix-wrapper {
+        right: calc(35% - 250px);
+    }
+}
+@media (max-width: 1900px) {
+    .helix-wrapper {
+        right: calc(30% - 250px);
+    }
+}
 @media (max-width: 1400px) {
     .helix-wrapper {
         right: 75px;
