@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from 'react';
 import AOS from 'aos';
+import toast from 'react-hot-toast';
 
 import 'aos/dist/aos.css';
 import "./ContactMe.css"
@@ -21,7 +22,7 @@ const ContactMe = () => {
 
         if (!name || !email || !message) return setStatus("All fields are required.");
         try {
-            const response = await fetch('https://flqyd.dev/message', {
+            const response = await fetch('https://fqyd.dev/api/message', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -32,17 +33,20 @@ const ContactMe = () => {
             });
 
             const data = await response.json();
-
             if (data.code === 200) {
-                setStatus("Message sent successfully!");
-
                 setName('');
                 setEmail('');
                 setMessage('');
+
+                toast.success("Message was sent!");
             } else {
-                setStatus("ERROR: " + data.msg || "Error sending message.");
+                if (data.msg) {
+                    return toast.error("ERROR: "+data.msg);
+                }
+                toast.error("Something went wrong. Please try again later.");
             }
         } catch (error) {
+            toast.error("Something went wrong. Please try again later.");
             console.error(error);
         }
     };

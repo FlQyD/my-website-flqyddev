@@ -1,9 +1,11 @@
 @import './../../variables.css';
 
+:root {
+    --contact-me-input-width: min(300px, calc(90dvw - 100px))}
+
 #contact-me-wrapper {
     width: 100%;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding: 25px 0;
 
     display: flex;
     justify-content: center;
@@ -18,13 +20,15 @@
     flex-direction: column;
     align-items: center;
 }
-#contact-me-container > h1{
+
+#contact-me-container>h1 {
     font-size: 2rem;
     color: var(--text-color);
 
     line-height: 1;
     padding-top: 35px;
 }
+
 #contact-me-form {
     display: flex;
     flex-direction: column;
@@ -35,40 +39,49 @@
 
     padding: 30px;
 }
-#contact-me-form > textarea,
-#contact-me-form > input {
-    width: 300px;
+
+#contact-me-form>textarea,
+#contact-me-form>input {
+    width: var(--contact-me-input-width);
     height: 40px;
 
     font-size: 1rem;
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
 
-    padding: 5px;
+    padding: 5px 20px;
     border-radius: 7px;
 
     border: 1px solid var(--border-color);
     outline: 0;
 }
-#contact-me-form>textarea{
+
+#contact-me-form>textarea {
     height: 120px;
 }
+
 #contact-me-form>button {
-    width: 312px;
+    width: var(--contact-me-input-width);
     height: 40px;
 
-    font-size: 16px;
+    font-size: 1rem;
     background: var(--border-color);
     border: var(--border-color);
     border-radius: 7px;
+
+    cursor: pointer;
 }
+
+
 #contact-me-form>button:active {
     background: #56565680;
 
     transition: 0.1s ease-in;
 }
 
-#contact-me-form > textarea:focus,
-#contact-me-form > textarea:active,
-#contact-me-form > input:focus,
-#contact-me-form > input:active{
+#contact-me-form>textarea:focus,
+#contact-me-form>textarea:active,
+#contact-me-form>input:focus,
+#contact-me-form>input:active {
     background: #ffffff05;
 }
