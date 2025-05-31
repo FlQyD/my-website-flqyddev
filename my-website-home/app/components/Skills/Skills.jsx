@@ -153,7 +153,7 @@ const Skills = () => {
 
     ])
     return (
-        <div>
+        <>
             <div className='fade-effect' id='fade-in-effect'>
             </div>
             <div id='skills-content'>
@@ -171,7 +171,7 @@ const Skills = () => {
                 </div>
             </div>
             <div className='fade-effect' id='fade-out-effect'></div>
-        </div>
+        </>
     )
 }
 

@@ -5,9 +5,9 @@ const Introduction = () => {
     return (
         <div id='introduction-container'>
             <h1 id='welcome'>
-                <a href="https://github.com/FlQyD"><span className='glitch'>FlQyD</span></a>
+                <a href="https://github.com/FlQyD" target="_blank"><span className='glitch'>FlQyD</span></a>
             </h1>
-            <p>Hi, I'm a front-end developer who chose the web to create amazing worlds. I fell in love with the web about four years ago when I created my first extension for a Rust (video game) admin website to simplify the admin's experience.</p>
+            <p>Welcome to my website! I am a 24 years old Front-end Developer from Hungary. I am most comfortable in Front-end, but that doesn't mean that I am not open for Back-end. As hobby I have made multiple tools for Rust(video game) admin purposes, that help detect cheaters, and catch ban evaders.</p>
         </div>
     )
 }

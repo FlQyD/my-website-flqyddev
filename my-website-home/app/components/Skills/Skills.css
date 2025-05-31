@@ -4,8 +4,8 @@
     width: 100%;
     height: 50px;
     
-    backdrop-filter: blur(7px);
-    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
 }
 #fade-in-effect {
     mask: linear-gradient(180deg, #ffffff00 0%, #121212f2 100%);
@@ -31,8 +31,8 @@
 #skills-content {
     padding-bottom: 15px;
     background: #121212cc;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
 }
 
 #skills-content h2,

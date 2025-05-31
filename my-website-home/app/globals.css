@@ -16,7 +16,10 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
-
+html,
+body{
+  overflow-x: hidden;
+}
 body {
   background: var(--background-color);
   color: whitesmoke;
